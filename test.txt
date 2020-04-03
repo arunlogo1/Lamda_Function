@@ -1,1 +1,6 @@
 this is a test file
+response_service_details = client_obj_ecs.describe_services(
+                cluster='cluster-608965',
+                services=['608965-fargate-service',])
+                #print(service_name)
+    print(response_service_details['services'][0]['runningCount'])
